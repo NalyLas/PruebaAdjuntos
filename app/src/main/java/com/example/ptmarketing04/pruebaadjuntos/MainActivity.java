@@ -95,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
     private void showFile(Uri fileUri){
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
+        //Para ver imagenes será diferente tendrás que cambiar el application/pdf mira en android developer
         intent.setDataAndType(fileUri, "application/pdf");
         intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
 
