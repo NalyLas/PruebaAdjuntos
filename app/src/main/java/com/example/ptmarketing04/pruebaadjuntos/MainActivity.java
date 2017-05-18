@@ -16,7 +16,7 @@ import java.io.File;
 public class MainActivity extends AppCompatActivity {
     protected TextView tv;
     protected Button btImg,btPdf,btAceptar;
-    private static final int FILE_SELECT_CODE = 0;
+    private static final int READ_REQUEST_CODE = 42;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private static final int READ_REQUEST_CODE = 42;
+    //De esta manera consigues abrir la pantalla para elegir documento
+    // tambien consigues ver el documento seleccionado
+    // lo que no has conseguido es subirlo a bd / servidor
+    // tienes que plantearte lo de FIREBASE
+
+
     /**
      * Fires an intent to spin up the "file chooser" UI and select an image.
      */
